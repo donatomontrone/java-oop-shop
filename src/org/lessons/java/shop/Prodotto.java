@@ -59,7 +59,7 @@ public class Prodotto {
 	
 	public int setRandomCode() {
 		Random rnd = new Random();
-		return code = rnd.nextInt(20);	
+		return code = rnd.nextInt(200);	
 		
 	}
 	
@@ -69,7 +69,7 @@ public class Prodotto {
 	}
 	
 	public String codeName() {
-		return getLongCode() + getName();
+		return getLongCode() + '-' + getName();
 	}
 	
 	public String getLongCode() {
